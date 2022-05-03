@@ -4,6 +4,8 @@
  */
 package prog.roberto.prog_grafica;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author DAW
@@ -77,19 +79,19 @@ public class Ej1 extends javax.swing.JFrame {
 
     private void CampotextoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampotextoActionPerformed
         // TODO add your handling code here:
-        Integer a;
-        Integer.parseInt(Campotexto.getText());
-        if (Integer.parseInt(Campotexto.getText())/2 == 0){
-        
-        
-        }
+      
         
     }//GEN-LAST:event_CampotextoActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
-        
+        int a = Integer.parseInt(this.Campotexto.getText());
+        if (((a%2) == 0)){
+            JOptionPane.showMessageDialog(rootPane, "El numero es par");
+        }else{
+            JOptionPane.showMessageDialog(rootPane, "El numero es impar");
+        }
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
